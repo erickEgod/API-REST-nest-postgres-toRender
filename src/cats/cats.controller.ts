@@ -10,10 +10,10 @@ import {
 import { CatsService } from "./cats.service";
 import { CreateCatDto } from "./dto/create-cat.dto";
 import { UpdateCatDto } from "./dto/update-cat.dto";
-import { ActiveUser } from "src/common/decorators/user-active.decorator";
-import { RequestInterface } from "src/common/interfaces/request.interface";
-import { FullDecorator } from "src/auth/decorators/full.decorator";
-import { Role } from "src/common/enums/role.enum";
+import { ActiveUser } from "../common/decorators/user-active.decorator";
+import { RequestInterface } from "../common/interfaces/request.interface";
+import { FullDecorator } from "../auth/decorators/full.decorator";
+import { Role } from "../common/enums/role.enum";
 
 @FullDecorator(Role.User)
 @Controller("cats")

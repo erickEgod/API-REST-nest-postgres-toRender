@@ -8,7 +8,7 @@ import { ROLES } from "./decorators/role.decorator";
 import { RolesGuard } from "./guards/roles.guard";
 import { Role } from "../common/enums/role.enum";
 import { FullDecorator } from "./decorators/full.decorator";
-import { ActiveUser } from "src/common/decorators/user-active.decorator";
+import { ActiveUser } from "../common/decorators/user-active.decorator";
 
 @Controller("auth")
 export class AuthController {

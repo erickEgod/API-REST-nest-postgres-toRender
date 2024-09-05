@@ -23,7 +23,7 @@ import { ConfigModule } from "@nestjs/config";
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DATABASE,
       autoLoadEntities: true, //!<---Otra manera de llamar a todas las entidades
-      synchronize: true,
+      synchronize: false,
       ssl: process.env.POSTGRES_SSL === "true",
       extra: {
         ssl:

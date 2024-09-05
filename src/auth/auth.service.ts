@@ -4,7 +4,7 @@ import {
   UnauthorizedException,
 } from "@nestjs/common";
 import { RegisterUserDto } from "./dto/register-user.dto";
-import { UsersService } from "src/users/users.service";
+import { UsersService } from "../users/users.service";
 import * as bcrypt from "bcrypt";
 import { LoginUserDto } from "./dto/login-user.dto";
 import { JwtService } from "@nestjs/jwt";

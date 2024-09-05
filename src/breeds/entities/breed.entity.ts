@@ -1,17 +1,14 @@
-import { Cat } from "src/cats/entities/cat.entity";
+import { Cat } from "../../cats/entities/cat.entity";
 import { Column, Entity, OneToMany } from "typeorm";
 
-@Entity({name:"breeds_table"})
+@Entity({ name: "breeds_table" })
 export class Breed {
+  @Column({ generated: true, primary: true })
+  id: number;
 
-    @Column({generated:true, primary:true})
-    id: number;
+  @Column()
+  name: string;
 
-    @Column()
-    name:string;
-
-    @OneToMany(()=>Cat, (cat)=>cat.breed)
-    cats:Cat[];
-
+  @OneToMany(() => Cat, (cat) => cat.breed)
+  cats: Cat[];
 }
-

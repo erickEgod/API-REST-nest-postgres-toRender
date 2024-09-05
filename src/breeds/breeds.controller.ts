@@ -10,8 +10,8 @@ import {
 import { BreedsService } from "./breeds.service";
 import { CreateBreedDto } from "./dto/create-breed.dto";
 import { UpdateBreedDto } from "./dto/update-breed.dto";
-import { FullDecorator } from "src/auth/decorators/full.decorator";
-import { Role } from "src/common/enums/role.enum";
+import { FullDecorator } from "../auth/decorators/full.decorator";
+import { Role } from "../common/enums/role.enum";
 
 @FullDecorator(Role.Admin)
 @Controller("breeds")
